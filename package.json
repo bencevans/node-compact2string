@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bencevans/node-compact2string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bencevans/node-compact2string/issues"
+  },
   "keywords": [
     "torrent",
     "compact",
