@@ -13,11 +13,11 @@ Convert bittorrent's [compact](http://wiki.theory.org/BitTorrent_Tracker_Protoco
 ```javascript
 var compact2string = require("compact2string");
 var Buffer = require("buffer").Buffer;
-var hostport = compact2string(new Buffer("0A0A0A050080", "hex"))
-console.log(iphost)
+var ipport = compact2string(new Buffer("0A0A0A05FF80", "hex"));
+console.log(ipport);
 ```
 
-=> ```"10.10.10.5:128" ```
+=> ```"10.10.10.5:65408" ```
 
 ### Multiple in same buffer
 	
