@@ -1,4 +1,4 @@
-# compact2string
+# compact2string [![Build Status](https://travis-ci.org/bencevans/node-compact2string.png?branch=master)](https://travis-ci.org/bencevans/node-compact2string)
 
 Convert bittorrent's [compact](http://wiki.theory.org/BitTorrent_Tracker_Protocol#Peer_Dictionary_Format) ip/host binary returned by Trackers to 'hostname:port' string.
 
