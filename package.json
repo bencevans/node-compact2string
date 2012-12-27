@@ -4,7 +4,7 @@
   "description": "Convert BitTorrent compact hostname & port buffer to a string 'hostname:port'",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha -R spec"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
     "convert"
   ],
   "author": "Ben Evans <ben@bensbit.co.uk> (http://bensbit.co.uk)",
-  "license": "BSD"
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "~1.7.4"
+  }
 }
