@@ -25,5 +25,8 @@
   "license": "BSD",
   "devDependencies": {
     "mocha": "~1.7.4"
+  },
+  "dependencies": {
+    "bops": "~0.1.0"
   }
 }
