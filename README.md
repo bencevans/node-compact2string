@@ -1,6 +1,9 @@
-# compact2string [![Build Status](https://travis-ci.org/bencevans/node-compact2string.png?branch=master)](https://travis-ci.org/bencevans/node-compact2string)
+# compact2string
 
 Convert bittorrent's [compact](http://wiki.theory.org/BitTorrent_Tracker_Protocol#Peer_Dictionary_Format) ip/host binary returned by Trackers to 'hostname:port' string.
+
+[![Build Status](https://travis-ci.org/bencevans/node-compact2string.png?branch=master)](https://travis-ci.org/bencevans/node-compact2string)
+[![Coverage Status](https://coveralls.io/repos/bencevans/node-compact2string/badge.png?branch=master)](https://coveralls.io/r/bencevans/node-compact2string?branch=master)
 
 ## Installation
 
