@@ -29,7 +29,5 @@
     "istanbul": "~0.1.44",
     "coveralls": "~2.3.0"
   },
-  "dependencies": {
-    "bops": "~0.1.0"
-  }
+  "dependencies": {}
 }
