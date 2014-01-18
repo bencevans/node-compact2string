@@ -1,8 +1,6 @@
 
 var assert = require('assert');
 var compact2string = require('./');
-var Buffer = require("buffer").Buffer;
-var bops = require('bops');
 
 describe('compact2string', function() {
 
@@ -24,10 +22,6 @@ describe('compact2string', function() {
     assert.throws(function() {
       compact2string.multi(new Buffer("0A0A0A05050505", "hex"));
     }, /multiple of/);
-  });
-
-  it('should return expected (when using bops in browser)', function() {
-    assert.equal('10.10.10.5:65408', compact2string(bops.from("0A0A0A05FF80", "hex")));
   });
 
 });
