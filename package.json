@@ -30,5 +30,16 @@
     "istanbul": "~0.1.44",
     "coveralls": "~2.3.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test.js",
+    "browsers": [
+      "ie/9..latest",
+      "chrome/25..latest",
+      "firefox/20..latest",
+      "safari/6..latest",
+      "opera/15.0..latest"
+    ]
+  }
 }
