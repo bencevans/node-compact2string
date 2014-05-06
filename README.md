@@ -6,6 +6,9 @@ Convert bittorrent's [compact](http://wiki.theory.org/BitTorrent_Tracker_Protoco
 [![Coverage Status](https://coveralls.io/repos/bencevans/node-compact2string/badge.png?branch=master)](https://coveralls.io/r/bencevans/node-compact2string?branch=master)
 [![Dependency Status](https://david-dm.org/bencevans/node-compact2string.png)](https://david-dm.org/bencevans/node-compact2string)
 
+[![browser support](https://ci.testling.com/bencevans/node-compact2string.png)
+](https://ci.testling.com/bencevans/node-compact2string)
+
 Need the reverse of this? Checkout https://github.com/feross/string2compact
 
 ## Installation
