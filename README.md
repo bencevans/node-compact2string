@@ -28,6 +28,13 @@ console.log(ipport);
 
 => ```"10.10.10.5:65408" ```
 
+```javascript
+ipport = compact2string(new Buffer("2a03288021109f07faceb00c000000010050", "hex"));
+console.log(ipport);
+```
+
+=> ```"[2a03:2880:2110:9f07:face:b00c::1]:80" ```
+
 ### Multiple in same buffer
 	
 ```javascript
@@ -36,6 +43,8 @@ console.log(hostports);
 ```
 
 => ```[ '10.10.10.5:128', '100.56.58.99:28525' ]```
+
+IPv6 version: `compact2string.multi6()`
 
 ## Licence
 
