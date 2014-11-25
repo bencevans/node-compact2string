@@ -1,3 +1,5 @@
+var ipaddr = require('ipaddr.js');
+
 module.exports = compact2string = function (buf) {
   switch(buf.length) {
   case 6:
@@ -8,7 +10,8 @@ module.exports = compact2string = function (buf) {
     for(var i = 0; i < 8; i++) {
       hexGroups.push(buf.readUInt16BE(i * 2).toString(16));
     }
-    return "[" + hexGroups.join(":") + "]:" + buf.readUInt16BE(16);
+    var host = ipaddr.parse(hexGroups.join(":")).toString();
+    return "[" + host + "]:" + buf.readUInt16BE(16);
   default:
     throw new Error("Invalid Compact IP/PORT, It should contain 6 or 18 bytes");
   }

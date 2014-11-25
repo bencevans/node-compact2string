@@ -7,7 +7,7 @@ describe('compact2string', function() {
     assert.equal('10.10.10.5:65408', compact2string(new Buffer("0A0A0A05FF80", "hex")));
   });
   it('should return expected IPv6 address', function() {
-    assert.equal('[2a03:2880:2110:9f07:face:b00c:0:1]:80', compact2string(new Buffer("2a03288021109f07faceb00c000000010050", "hex")));
+    assert.equal('[2a03:2880:2110:9f07:face:b00c::1]:80', compact2string(new Buffer("2a03288021109f07faceb00c000000010050", "hex")));
   });
 
   it('should throw an error if the buffer length isn\'t 6 or 18', function() {
@@ -32,7 +32,7 @@ describe('compact2string.multi', function() {
 
 describe('compact2string.multi6', function() {
   it('should return expected multi6', function() {
-    assert.deepEqual([ '[2a03:2880:2110:9f07:face:b00c:0:1]:80', '[2a00:1450:4008:801:0:0:0:1010]:443' ], compact2string.multi6(new Buffer("2a03288021109f07faceb00c0000000100502a00145040080801000000000000101001bb", "hex")));
+    assert.deepEqual([ '[2a03:2880:2110:9f07:face:b00c::1]:80', '[2a00:1450:4008:801::1010]:443' ], compact2string.multi6(new Buffer("2a03288021109f07faceb00c0000000100502a00145040080801000000000000101001bb", "hex")));
   });
 
   it('should throw an error if the buffer isn\'t a multiple of 18', function() {
