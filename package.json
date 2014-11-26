@@ -1,6 +1,6 @@
 {
   "name": "compact2string",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Convert BitTorrent compact hostname & port buffer to a string 'hostname:port'",
   "main": "index.js",
   "scripts": {
