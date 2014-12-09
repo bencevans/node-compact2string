@@ -30,7 +30,9 @@
     "istanbul": "~0.1.44",
     "coveralls": "~2.3.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ipaddr.js": ">= 0.1.5"
+  },
   "testling": {
     "harness": "mocha-bdd",
     "files": "test.js",
