@@ -31,7 +31,7 @@
     "coveralls": "~2.3.0"
   },
   "dependencies": {
-    "ipaddr.js": "^0.1.5"
+    "ipaddr.js": ">= 0.1.5"
   },
   "testling": {
     "harness": "mocha-bdd",
