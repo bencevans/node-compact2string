@@ -1,6 +1,6 @@
 var ipaddr = require('ipaddr.js');
 
-module.exports = compact2string = function (buf) {
+var compact2string = function (buf) {
   switch(buf.length) {
   case 6:
     return buf[0] + "." + buf[1] + "." + buf[2] + "." + buf[3] + ":" + buf.readUInt16BE(4);
@@ -40,3 +40,5 @@ compact2string.multi6 = function (buf) {
 
   return output;
 };
+
+module.exports = compact2string;
