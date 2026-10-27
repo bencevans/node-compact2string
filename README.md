@@ -48,4 +48,9 @@ IPv6 version: `compact2string.multi6()`
 
 ## Licence
 
-(MIT Licence)
+MIT — see [LICENSE](LICENSE) for the full copyright and permission notice.
+
+This MIT notice also applies to compact2string 1.4.1 (source revision
+[`c68be5e`](https://github.com/bencevans/node-compact2string/tree/c68be5e36ecc99a87d774bc1f9db9900d9c887d7)).
+That release’s package metadata says `BSD`, while its README says MIT; the
+licence is clarified here as MIT. The already-published npm archive is unchanged.
